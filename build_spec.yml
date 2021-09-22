@@ -25,4 +25,4 @@ steps:
 outputArtifacts:
   - name: flask_python
     type: DOCKER_IMAGE
-    location: python_flask_ex:2.0
+    location: python_flask_ex:`cat ./version.txt`
