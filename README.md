@@ -27,14 +27,14 @@ Open a terminal and test out the python Flask web app example which acts as a si
 You can locally build a container image using docker,providing docker image version, to verify that you can run the app within a container.
 
 ```
-docker build -t python-flask-example:<docker-image-version> .
+docker build -t python-flask-docker-version:<docker-image-version> .
 ```
 
 Verify the image was was built, by listing the images using ``` docker image ls```
 
 Now, run your local container and confirm you can access the web app running in the container
 ```
-docker run -d -p 5000:5000 python-flask-example:<docker-image-version>
+docker run -d -p 5000:5000 python-flask-docker-version:<docker-image-version>
 ```
 
 And open your browser to http://127.0.0.1:5000/ 
