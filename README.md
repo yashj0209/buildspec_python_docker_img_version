@@ -91,7 +91,7 @@ In the project, under Artifacts, create a DevOps Artifact to point to the Contai
 3. Path: REGION/TENANCY-NAMESPACE/python-flask-docker-img-version:${version} (Here, ${version} will pick up the exported variable version from ```build_spec.yml```)
 4. Replace parameters: Yes, substitute placeholders
 
-<img src="create_artifact_version.png" />
+<img src="create_artifact_docker_version.png" />
 
 Required policies must be added in the root compartment for the Container Registry repository and DevOps Artifact resource.
 1. Provide access to OCIR to deliver artifacts : ```Allow dynamic-group dg-with-devops-resources to manage repos in tenancy```
@@ -107,10 +107,10 @@ Add a Deliver Artifacts stage to your Build Pipeline after the Managed Build sta
 
 1. In your Deliver Artifacts stage, choose ```Select Artifact```
 2. From the list of artifacts select the ```python-flask-docker-img-version container``` artifact that you created above
-<img src="select_artifact_version.png" />
+<img src="select_artifact_docker_version.png" />
 
 3. Assign the container image outputArtifact from the ```build_spec.yml``` to the DevOps project artifact. For the "Build config/result Artifact name" enter: ```flask_python_docker`` (This name should be the same as the one mentioned in the outputArtifact section of the build_spec.yml file.
-<img src="deliver_artifact_stage_full_version.png" />
+<img src="deliver_artifact_stage_full_docker_version.png" />
 
 ### Run your Build in OCI DevOps
 
