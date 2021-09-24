@@ -109,7 +109,7 @@ Add a Deliver Artifacts stage to your Build Pipeline after the Managed Build sta
 2. From the list of artifacts select the ```python-flask-docker-img-version container``` artifact that you created above
 <img src="select_artifact_version.png" />
 
-3. Assign the container image outputArtifact from the ```build_spec.yml``` to the DevOps project artifact. For the "Build config/result Artifact name" enter: ```flask_python:2.0``` (This name should be the same as the one mentioned in the outputArtifact section of the build_spec.yml file).
+3. Assign the container image outputArtifact from the ```build_spec.yml``` to the DevOps project artifact. For the "Build config/result Artifact name" enter: ```flask_python_docker`` (This name should be the same as the one mentioned in the outputArtifact section of the build_spec.yml file.
 <img src="deliver_artifact_stage_full_version.png" />
 
 ### Run your Build in OCI DevOps
