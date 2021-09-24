@@ -23,6 +23,6 @@ steps:
         runAs: root
 
 outputArtifacts:
-  - name: flask_python
+  - name: flask_python_docker
     type: DOCKER_IMAGE
     location: python_flask_ex:2.0
